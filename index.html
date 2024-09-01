@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnTracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LearnTracker</h1>
+            <button id="toggle-mode">Modo Oscuro/Claro</button>
+        </header>
+
+        <section id="add-course">
+            <h2>Agregar Curso/Tutorial</h2>
+            <input type="text" id="course-name" placeholder="Nombre del Curso">
+            <input type="text" id="platform" placeholder="Plataforma (Udemy, Coursera, etc.)">
+            <input type="number" id="progress" placeholder="Progreso (%)">
+            <button id="add-course-btn">Agregar</button>
+        </section>
+
+        <section id="courses">
+            <h2>Mis Cursos</h2>
+            <table id="courses-table">
+                <thead>
+                    <tr>
+                        <th>Nombre del Curso</th>
+                        <th>Plataforma</th>
+                        <th>Progreso</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarán los cursos dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="calendar-section">
+            <h2>Calendario de Estudios</h2>
+            <!-- Contenedor del Calendario -->
+            <div id="calendar"></div>
+        </section>
+
+        <section id="notes">
+            <h2>Agregar Notas al Curso</h2>
+            <textarea id="note-input" placeholder="Escribe tus notas aquí..."></textarea>
+            <button id="save-note-btn">Guardar Nota</button>
+        </section>
+
+        <footer>
+            <div>
+                <p>Creado por</p>
+                <span>Elizabeth Diaz Familia</span>
+            </div>
+            <ul class="social-links">
+                <li><a href="https://linkedin.com/in/eli-familia/" target="_blank">
+                    <img src="imagenes/linkedin.png" alt="linkedin">
+                </a></li>
+                <li><a href="https://github.com/Lizzy0981" target="_blank">
+                    <img src="imagenes/github.png" alt="github">
+                </a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
